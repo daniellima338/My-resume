@@ -257,3 +257,30 @@ footer {
     position: relative;
     width: 60%;
 }
+
+/* ---------------------------------------- Skills */
+
+.progress {
+    position: relative;
+    height: 25px; /* when you change the height of a progress wrapper, it automatically changes the height of the bar inside */
+    margin-bottom: 4px;
+}
+
+.progress-type {
+    position: absolute;
+    left: 0px; /* because we have set it too absolute, when we move it to the left, it will move it to the left of its parent */ 
+    font-weight: 400;
+    padding: 3px 30px 2px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+    height: 25px;
+}
+
+.text-align-center {
+    text-align: center;
+    padding-top: 12px;
+}
+
+.progress-section {
+    margin: 40px 20px;
+}
