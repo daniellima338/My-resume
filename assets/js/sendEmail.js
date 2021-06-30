@@ -10,8 +10,8 @@ function sendMail(contactForm) {
         },
         function(error) {
             console.log("FAILED", error);
-        }
-    );
-    return false;  // To block from loading a new page
+        });
+        return false;  // To block from loading a new page
 }
+
 
