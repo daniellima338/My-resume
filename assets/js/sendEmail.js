@@ -2,14 +2,16 @@ function sendMail(contactForm) {
     emailjs.send("service_4jn0x3g", "daniel_resume", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.emailaddress.value,
-        "project_request": contactForm.projectsummery.value
+        "project_request": contactForm.projectsummary.value
     })
-    .then(
-        function(response){
+        .then(
+            function(response) {
             console.log("SUCCESS", response);
-        },
-        function(error) {
+            },
+            function(error) {
             console.log("FAILED", error);
-        });
-    return false;
+            }
+        );
+    return false;  // To block from loading a new page
 }
+
